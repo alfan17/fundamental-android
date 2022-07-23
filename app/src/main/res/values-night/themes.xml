@@ -1,0 +1,184 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Submission_alfan" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_cyan</item>
+        <item name="colorPrimaryVariant">@color/cyan</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dark_cyan</item>
+        <item name="colorSecondaryVariant">@color/cyan</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- General -->
+
+    <style name="GeneralBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:background">@color/dark_cyan</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="BackButton">
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_width">28dp</item>
+
+        <item name="android:background">@drawable/ic_baseline_arrow_back_ios_24</item>
+    </style>
+
+    <style name="ShareButton">
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_width">28dp</item>
+
+        <item name="android:background">@drawable/ic_baseline_share_24</item>
+    </style>
+
+    <style name="BackgroundHeader">
+        <item name="android:background">@drawable/border_white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">7dp</item>
+
+        <item name="android:textColor">@color/cyan</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="RecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+
+        <item name="android:background">@drawable/border_white</item>
+    </style>
+
+    <!-- Detail -->
+
+    <style name="DetailArea">
+        <item name="android:background">@drawable/border_white</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="android:padding">7dp</item>
+    </style>
+
+    <style name="ImageGithub">
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+
+
+        <item name="android:src">@drawable/github</item>
+    </style>
+
+    <style name="TextDetailTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">2dp</item>
+
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="TextDetailUsername">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+
+
+        <item name="android:textColor">@color/cyan</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextDetailCompany">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="TextDetailLocation">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- List -->
+
+    <style name="ImageList">
+        <item name="android:layout_height">145dp</item>
+        <item name="android:layout_width">145dp</item>
+        <item name="android:layout_margin">7dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="TextListTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textAlignment">center</item>
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ListArea">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_cyan</item>
+    </style>
+
+    <!-- Unknown -->
+
+    <style name="NullImage">
+        <item name="android:layout_height">85dp</item>
+        <item name="android:layout_width">85dp</item>
+
+        <item name="android:src">@drawable/ic_baseline_emoji_people_24</item>
+    </style>
+
+    <style name="NullText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+
+        <item name="android:textColor">@color/cyan</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

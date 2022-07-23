@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/GeneralBackground"
+    tools:context=".ui.activity.UserDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        style="@style/BackgroundHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/title_detail"
+            style="@style/TextTitle"
+            android:text="@string/detail_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.695" />
+
+        <ImageButton
+            android:id="@+id/share_detail"
+            style="@style/ShareButton"
+            app:layout_constraintBottom_toBottomOf="@+id/title_detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.867"
+            app:layout_constraintStart_toEndOf="@+id/title_detail"
+            app:layout_constraintTop_toTopOf="@+id/title_detail"
+            app:layout_constraintVertical_bias="0.428"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/back_detail"
+            style="@style/BackButton"
+            app:layout_constraintBottom_toBottomOf="@+id/title_detail"
+            app:layout_constraintEnd_toStartOf="@+id/title_detail"
+            app:layout_constraintHorizontal_bias="0.132"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title_detail"
+            app:layout_constraintVertical_bias="0.428"
+            tools:ignore="ContentDescription" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_detail"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/DetailArea"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <ImageView
+                android:id="@+id/image_detail"
+                style="@style/ImageGithub"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="ContentDescription" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_user"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="100dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                app:layout_constraintEnd_toEndOf="@+id/image_detail"
+                app:layout_constraintStart_toStartOf="@+id/image_detail"
+                app:layout_constraintTop_toTopOf="@+id/image_detail" />
+
+            <TextView
+                android:id="@+id/name_detail"
+                style="@style/TextDetailTitle"
+                android:text="@string/name"
+                app:layout_constraintEnd_toEndOf="@+id/image_user"
+                app:layout_constraintStart_toStartOf="@+id/image_user"
+                app:layout_constraintTop_toBottomOf="@+id/image_user" />
+
+            <TextView
+                android:id="@+id/username_detail"
+                style="@style/TextDetailUsername"
+                android:text="@string/username"
+                app:layout_constraintEnd_toEndOf="@+id/name_detail"
+                app:layout_constraintStart_toStartOf="@+id/name_detail"
+                app:layout_constraintTop_toBottomOf="@+id/name_detail" />
+
+            <TextView
+                android:id="@+id/company_detail"
+                style="@style/TextDetailCompany"
+                android:text="@string/company"
+                app:layout_constraintEnd_toEndOf="@+id/username_detail"
+                app:layout_constraintStart_toStartOf="@+id/username_detail"
+                app:layout_constraintTop_toBottomOf="@+id/username_detail" />
+
+            <TextView
+                android:id="@+id/location_detail"
+                style="@style/TextDetailLocation"
+                android:text="@string/location"
+                app:layout_constraintEnd_toEndOf="@+id/company_detail"
+                app:layout_constraintStart_toStartOf="@+id/company_detail"
+                app:layout_constraintTop_toBottomOf="@+id/company_detail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/location_detail"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="@+id/location_detail"
+                app:layout_constraintTop_toBottomOf="@+id/company_detail"
+                app:layout_constraintVertical_bias="0.0">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/detail_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:background="@color/cyan"
+                    app:layout_constraintEnd_toEndOf="@+id/location_detail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/location_detail"
+                    app:layout_constraintTop_toBottomOf="@+id/company_detail"
+                    app:tabTextColor="@color/white" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/detail_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="@drawable/border_cyan"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/detail_tab"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/detail_tab"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_tab"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/favorite_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/toggle_favorite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
